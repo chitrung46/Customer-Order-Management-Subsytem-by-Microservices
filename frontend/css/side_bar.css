@@ -1,0 +1,115 @@
+  /* Sidebar Styles */
+
+  .div {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0px;
+    background-color: var(--basedark-bg-2);
+    border-radius: 16px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  .nav-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 56px;
+      height: 56px;
+      margin: 12px auto;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      background-color: var(--basedark-bg-2);
+  }
+
+  .pattern {
+      display: none !important;
+      position: fixed;
+      height: 104px;
+  }
+
+  /* Khi div có class 'nav_menu-active' */
+  .nav_menu-active .nav-item {
+      background-color: var(--primary-color);
+      box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.32);
+  }
+
+  /* Khi div có class 'nav_menu-active', hiển thị pattern */
+  .nav_menu-active .pattern {
+      display: block !important;
+  }
+
+  .nav_menu-active .nav-icon {
+      fill: var(--white);
+      /* Thay đổi màu icon khi active */
+  }
+
+  .nav-icon {
+      width: 24px;
+      height: 24px;
+      fill: var(--primary-color);
+      /* Màu icon khi chưa active */
+  }
+
+  .check-in {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+      max-height: 100% !important;
+      align-items: flex-start;
+      gap: 24px;
+      position: relative;
+      background-color: var(--base-bg);
+
+  }
+
+  .sidebar {
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      align-self: stretch;
+      background-color: var(--basedark-bg-2);
+      position: relative;
+      gap: 10px;
+      flex: 0 0 auto;
+      border-radius: 10px;
+      width: 92px;
+  }
+
+  .nav_menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      border-radius: 10px;
+      position: relative;
+      flex: 0 0 auto;
+  }
+
+  .logo {
+      position: relative;
+      width: 56px;
+      height: 56px;
+      margin-bottom: 16px;
+  }
+
+  .overlap-group {
+    position: relative;
+    height: 56px;
+    border-radius: 12px;
+  }
+
+  .rectangle {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    top: 0;
+    left: 0;
+    background-color: #eb966a;
+    border-radius: 12px;
+    opacity: 0.26;
+  }
