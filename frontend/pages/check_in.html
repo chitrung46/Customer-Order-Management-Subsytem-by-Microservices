@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="../css/globals.css" />
+  <link rel="stylesheet" href="../css/styleguide.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/edit_table_checkin.css" />
+  <link rel="stylesheet" href="../css/side_bar.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="check-in">
+    <div class="sidebar">
+      <div class="div">
+        <div class="logo">
+          <div class="overlap-group">
+            <div class="rectangle"></div>
+            <img
+              src="../assets/icons/icon_logo.svg"
+              alt="Restaurant Logo" class="logo" />
+          </div>
+        </div>
+        <div class="menu">
+          <div class="nav_menu nav_menu-active">
+            <div class="pattern">
+              <div><img src="../assets/img/Pattern.svg" /></div>
+            </div>
+            <button class="nav-item" aria-current="page">
+              <img class="nav-icon" src="../assets/icons/icon_table_active.svg" alt="Quản lý bàn" />
+            </button>
+          </div>
+          <div class="nav_menu ">
+            <div class="pattern">
+              <div><img src="../assets/img/Pattern.svg" /></div>
+            </div>
+            <button class="nav-item " aria-current="page">
+              <img class=".nav-icon" src="../assets/icons/icon_dish_inactive.svg" alt="Gọi món" />
+            </button>
+          </div>
+          <div class="nav_menu ">
+            <div class="pattern">
+              <div><img src="../assets/img/Pattern.svg" /></div>
+            </div>
+            <button class="nav-item " aria-current="page">
+              <img class=".nav-icon" src="../assets/icons/icon_home_inactive.svg" alt="Trang chủ" />
+            </button>
+          </div>
+          <div class="nav_menu ">
+            <div class="pattern">
+              <div><img src="../assets/img/Pattern.svg" /></div>
+            </div>
+            <button class="nav-item " aria-current="page">
+              <img class=".nav-icon" src="../assets/icons/icon_notification_inactive.svg" alt="Thông báo" />
+            </button>
+          </div>
+          <div>
+            <button class="nav-item " aria-current="page">
+              <img class=".nav-icon" src="../assets/icons//icon_logout.svg" alt="Đăng xuất" />
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="column">
+      <div class="div-2">
+        <div class="div-3">
+          <div class="title">
+            <div class="date">Thứ tư, 01/05/2025</div>
+            <div class="resto-name">Bàn 10</div>
+          </div>
+          <div class="form-elements">
+            <div class="frame-2">
+              <img class="img-3" src="../assets/icons/icon_search.svg" />
+              <div class="this-is-placeholder">Tìm bàn</div>
+            </div>
+          </div>
+        </div>
+        <div class="option-table">
+          <div class="frame-3">
+            <div class="choose-date">
+              <div class="frame-4">
+                <img class="img-4" src="../assets/icons/icon_date_range.svg" />
+                <div class="text-wrapper">Ngày</div>
+                <img class="img-2" src="../assets/icons/icon_chevron_up.svg" />
+              </div>
+            </div>
+            <div class="timer">
+              <div class="frame-4">
+                <img class="img-4" src="../../assets/icons/icon_access_time.svg" />
+                <div class="text-wrapper-2">Giờ</div>
+                <img class="img-2" src="../../assets/icons/icon_chevron_up.svg" />
+              </div>
+
+            </div>
+            <div class="num-people">
+              <div class="frame-4">
+                <img class="mdi-person-multiple" src="../assets/icons/icon_person_multiple.svg" />
+                <div class="text-wrapper-3">Số người</div>
+                <img class="chevron-up" src="../assets/icons/icon_chevron_up.svg" />
+              </div>
+            </div>
+          </div>
+          <img class="top-divider-1" src="../assets/img/top_divider_1.svg" />
+        </div>
+      </div>
+      <div class="div-2">
+        <div class="div-3">
+          <div class="text-wrapper-4">Danh sách bàn</div>
+          <div class="form-elements-2">
+            <img class="img-3" src="../assets/icons/icon_arrow_ios_down.svg" />
+            <div class="dine-in">Trạng thái</div>
+          </div>
+        </div>
+        <div class="list-table">
+          <article class="table-card reserved">
+            <img src="../assets/img/img_table.png" alt="" class="table-image" />
+            <div class="table-info">
+              <div class="table-name">
+                <span>Bàn</span>
+                <span>01</span>
+              </div>
+              <div class="table-status">
+                <span class="status-badge text-wrapper-7">Đã đặt</span>
+                <span class="capacity ">4 người</span>
+              </div>
+            </div>
+          </article>
+          <article class="table-card available">
+            <img src="../assets/img/img_table.png" alt="" class="table-image" />
+            <div class="table-info">
+              <div class="table-name">
+                <span>Bàn</span>
+                <span>02</span>
+              </div>
+              <div class="table-status">
+                <span class="status-badge text-wrapper-7">Trống</span>
+                <span class="capacity">4 người</span>
+              </div>
+            </div>
+
+          </article>
+
+          <article class="table-card occupied">
+            <img src="../assets/img/img_table.png" alt="" class="table-image" />
+            <div class="table-info">
+              <div class="table-name">
+                <span>Bàn</span>
+                <span>03</span>
+              </div>
+              <div class="table-status">
+                <span class="status-badge text-wrapper-7">Đang phục vụ</span>
+                <span class="capacity ">4 người</span>
+              </div>
+            </div>
+
+          </article>
+
+          <article class="table-card reserved">
+            <img src="../assets/img/img_table.png" alt="" class="table-image" />
+            <div class="table-info">
+              <div class="table-name">
+                <span>Bàn</span>
+                <span>04</span>
+              </div>
+              <div class="table-status">
+                <span class="status-badge text-wrapper-7">Đã đặt</span>
+                <span class="capacity ">4 người</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="table-card occupied">
+            <img src="../assets/img/img_table.png" alt="" class="table-image" />
+            <div class="table-info">
+              <div class="table-name">
+                <span>Bàn</span>
+                <span>05</span>
+              </div>
+              <div class="table-status">
+                <span class="status-badge text-wrapper-7">Đang phục vụ</span>
+                <span class="capacity ">8 người</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="table-card available">
+            <img src="../assets/img/img_table.png" alt="" class="table-image" />
+            <div class="table-info">
+              <div class="table-name">
+                <span>Bàn</span>
+                <span>06</span>
+              </div>
+              <div class="table-status">
+                <span class="status-badge text-wrapper-7">Trống</span>
+                <span class="capacity ">8 người</span>
+              </div>
+            </div>
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="column-2">
+      <div class="detail-table">
+        <div class="header">
+          <div class="div-3">
+            <div class="title-2">Chi tiết</div>
+            <button class="button" aria-current="page">
+              <img src="../assets/icons/icon_edit_outline.svg" alt="Chỉnh sửa" />
+            </button>
+          </div>
+          <div class="selector">
+            <div class="tab">
+              <div class="text-white">Đang trống</div>
+            </div>
+            <div class="tab-2">
+              <div class="text-wrapper-10">Đặt trước</div>
+            </div>
+            <div class="tab-2">
+              <div class="text-wrapper-10">Đang phục vụ</div>
+            </div>
+          </div>
+        </div>
+        <img class="top-divider" src="../assets/img/top_divider_1.svg" />
+        <div class="frame-10">
+          <div class="div-3">
+            <div class="text-wrapper-11">Bàn 2</div>
+            <div class="text-wrapper-12">2 người</div>
+          </div>
+          <div class="frame-11">
+            <div class="div-3">
+              <div class="text-wrapper-13">Loại dịch vụ:</div>
+              <div class="text-wrapper-14">Buffet</div>
+            </div>
+            <div class="div-3">
+              <div class="text-wrapper-13">Đặt ngày:</div>
+              <div class="text-wrapper-14">01/03/2025</div>
+            </div>
+            <div class="div-3">
+              <div class="text-wrapper-13">Ngày hẹn:</div>
+              <div class="text-wrapper-14">02/03/2025</div>
+            </div>
+            <div class="div-3">
+              <div class="text-wrapper-13">Giờ hẹn:</div>
+              <div class="text-wrapper-14">16h30</div>
+            </div>
+          </div>
+        </div>
+        <img class="top-divider" src="../assets/img/top_divider_1.svg" />
+        <div class="content-wrapper">
+          <div class="content-table-items-wrapper">
+            <div class="content-table-items">
+              <div class="item">
+                <p class="p">Thông tin khách đặt bàn</p>
+                <div class="div-3">
+                  <div class="text-wrapper-13">Họ tên:</div>
+                  <div class="text-wrapper-14">Lê Văn A</div>
+                </div>
+                <div class="div-3">
+                  <div class="text-wrapper-13">Số điện thoại</div>
+                  <div class="text-wrapper-14">090935893</div>
+                </div>
+              </div>
+              <div class="note">
+                <div class="this-is-placeholder-wrapper">
+                  <div class="this-is-placeholder">Ghi chú</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="frame-12">
+        <button class="confirm-payment-wrapper">
+          <div class="confirm-payment">Hủy</div>
+        </button>
+        <button class="button-2">
+          <div class="confirm-payment-2">Check In</div>
+        </button>
+      </div>
+    </div>
+
+    <div class="overlay">
+      <div class="edit-table-checkin">
+        <div class="text-wrapper">Chỉnh sửa thông tin</div>
+        <div class="div_2">
+          <div class="text-wrapper-2">Trạng thái</div>
+          <div class="selector">
+            <div class="tab">
+              <div class="text-white">Đang trống</div>
+            </div>
+            <div class="tab-2">
+              <div class="text-wrapper-10">Đặt trước</div>
+            </div>
+            <div class="tab-2">
+              <div class="text-wrapper-10">Đang phục vụ</div>
+            </div>
+          </div>
+        </div>
+        <div class="info-checkin">
+          <div class="text-wrapper-4">Thông tin đặt bàn</div>
+          <div class="frame-2">
+            <div class="choose-date">
+              <div class="frame-3">
+                <img class="img-4" src="../assets/icons/icon_date_range.svg" />
+                <div class="text-wrapper-5">Ngày</div>
+                <img class="img-2" src="../assets/icons/icon_chevron_up.svg" />
+              </div>
+            </div>
+            <div class="timer">
+              <div class="frame-3">
+                <img class="img-4" src="../assets/icons/icon_access_time.svg" />
+                <div class="text-wrapper-7">Giờ</div>
+                <img class="img-2" src="../assets/icons/icon_chevron_up.svg" />
+              </div>
+            </div>
+            <div class="num-people">
+              <div class="frame-3">
+                <img class="img-4" src="../assets/icons/icon_person_multiple.svg" />
+                <div class="text-wrapper-7">Số người</div>
+                <img class="chevron-up" src="../assets/icons/icon_chevron_up.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="vector" src="img/vector-11.svg" />
+        <div class="info-customer">
+          <div class="content-table-items">
+            <div class="item">
+              <div class="text-wrapper-4">Thông tin khách hàng</div>
+            </div>
+          </div>
+          <div class="text-inputs">
+            <label class="input-text-label" for="fullname">Họ và tên</label>
+            <input type="text" class="form-control is-invalid input-field typing" id="fullname" 
+              placeholder="Nhập họ và tên" value="Nguyễn Văn">
+            
+            <div class="invalid-feedback text_warning">
+              Tên không hợp lệ
+            </div>
+          </div>
+
+          <div class="text-inputs">
+            <label class="input-text-label" for="phone">SĐT</label>
+            <input type="tel" class="form-control input-field-2 typing" id="phone" 
+              placeholder="Nhập họ và tên" value="090935893">
+            
+            <div class="invalid-feedback text_warning">
+              Số không hợp lệ
+            </div>
+          </div>
+          
+        </div>
+        <div class="frame-button">
+          <button class="button">
+            <div class="cancle">Hủy</div>
+          </button>
+          <button class="confirm-payment-wrapper">
+            <div class="confirm-payment-2">Lưu</div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
