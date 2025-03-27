@@ -1,15 +1,4 @@
 
-  .div {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 24px 0px;
-    background-color: var(--basedark-bg-2);
-    border-radius: 16px;
-    position: relative;
-    flex: 0 0 auto;
-  }
 
   .check-in .rectangle-2 {
     position: absolute;
@@ -315,7 +304,7 @@
     height: 24px;
   }
   
-  .check-in .top-divider-1 {
+  .top-divider-1 {
     position: relative;
     align-self: stretch;
     width: 100%;
