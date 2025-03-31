@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../css/order_reception.css" />
         <link rel="stylesheet" href="../css/side_bar.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../js/side_bar.js"></script>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
@@ -27,33 +28,35 @@
                       <div class="pattern">
                         <div><img src="../assets/img/Pattern.svg" /></div>
                       </div>
-                      <button class="nav-item" aria-current="page">
+                      <button class="nav-item" aria-current="page" onclick="toggleActive(this)">
                         <img class="nav-icon" src="../assets/icons/icon_chef_white.svg" alt="Quản lý bếp" />
                       </button>
                     </div>
-                    <div class="nav_menu ">
+                    <div class="nav_menu">
                       <div class="pattern">
                         <div><img src="../assets/img/Pattern.svg" /></div>
                       </div>
-                      <button class="nav-item " aria-current="page">
-                        <img class=".nav-icon" src="../assets/icons/icon_manage_food.svg" alt="Quản lý nguyên liệu" />
+                      <button class="nav-item" aria-current="page" onclick="toggleActive(this)">
+                        <img class="nav-icon" src="../assets/icons/icon_manage_food.svg" alt="Quản lý nguyên liệu" />
                       </button>
                     </div>
-                    <div class="nav_menu ">
+                    <div class="nav_menu">
                       <div class="pattern">
                         <div><img src="../assets/img/Pattern.svg" /></div>
                       </div>
-                      <button class="nav-item " aria-current="page">
-                        <img class=".nav-icon" src="../assets/icons/icon_notification_inactive.svg" alt="Thông báo" />
+                      <button class="nav-item" aria-current="page" onclick="toggleActive(this)">
+                        <img class="nav-icon" src="../assets/icons/icon_notification_inactive.svg" alt="Thông báo" />
                       </button>
                     </div>
-                    <div>
-                      <button class="nav-item " aria-current="page">
-                        <img class=".nav-icon" src="../assets/icons//icon_logout.svg" alt="Đăng xuất" />
+                    <div class="nav_menu">
+                      <div class="pattern">
+                        <div><img src="../assets/img/Pattern.svg" /></div>
+                      </div>
+                      <button class="nav-item" aria-current="page" onclick="toggleActive(this)">
+                        <img class="nav-icon" src="../assets/icons/icon_logout.svg" alt="Đăng xuất" />
                       </button>
                     </div>
                   </div>
-          
                 </div>
             </div>
             <div class="column">
@@ -75,7 +78,7 @@
                         </div>
                         <div class="content">
                             <div class="text-wrapper-3">$10,243.00</div>
-                            <div class="text-wrapper-4">Total Revenue</div>
+                            <div class="text-wrapper-4">Tổng doanh thu</div>
                         </div>
                     </div>
                     <div class="content-summary-card">
@@ -101,7 +104,7 @@
                         </div>
                         <div class="content">
                             <div class="text-wrapper-3">1,234</div>
-                            <div class="text-wrapper-4">Total Customer</div>
+                            <div class="text-wrapper-4">Tổng khách hàng</div>
                         </div>
                     </div>
                 </div>

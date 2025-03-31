@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../css/edit_table_checkin.css" />
   <link rel="stylesheet" href="../css/side_bar.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../js/side_bar.js"></script>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
@@ -30,41 +31,43 @@
             <div class="pattern">
               <div><img src="../assets/img/Pattern.svg" /></div>
             </div>
-            <button class="nav-item" aria-current="page">
-              <img class="nav-icon" src="../assets/icons/icon_chef_white.svg" alt="Quản lý bếp" />
+            <button class="nav-item" aria-current="page" onclick="toggleActive(this)">
+              <img class="nav-icon" src="../assets/icons/icon_table_active.svg" alt="Quản lý bàn" />
             </button>
           </div>
-          <div class="nav_menu ">
+          <div class="nav_menu">
             <div class="pattern">
               <div><img src="../assets/img/Pattern.svg" /></div>
             </div>
-            <button class="nav-item " aria-current="page">
-              <img class=".nav-icon" src="../assets/icons/icon_dish_inactive.svg" alt="Gọi món" />
+            <button class="nav-item" aria-current="page" onclick="toggleActive(this)">
+              <img class="nav-icon" src="../assets/icons/icon_dish_inactive.svg" alt="Gọi món" />
             </button>
           </div>
-          <div class="nav_menu ">
+          <div class="nav_menu">
             <div class="pattern">
               <div><img src="../assets/img/Pattern.svg" /></div>
             </div>
-            <button class="nav-item " aria-current="page">
-              <img class=".nav-icon" src="../assets/icons/icon_home_inactive.svg" alt="Trang chủ" />
+            <button class="nav-item" aria-current="page" onclick="toggleActive(this)">
+              <img class="nav-icon" src="../assets/icons/icon_home_inactive.svg" alt="Trang chủ" />
             </button>
           </div>
-          <div class="nav_menu ">
+          <div class="nav_menu">
             <div class="pattern">
               <div><img src="../assets/img/Pattern.svg" /></div>
             </div>
-            <button class="nav-item " aria-current="page">
-              <img class=".nav-icon" src="../assets/icons/icon_notification_inactive.svg" alt="Thông báo" />
+            <button class="nav-item" aria-current="page" onclick="toggleActive(this)">
+              <img class="nav-icon" src="../assets/icons/icon_notification_inactive.svg" alt="Thông báo" />
             </button>
           </div>
-          <div>
-            <button class="nav-item " aria-current="page">
-              <img class=".nav-icon" src="../assets/icons//icon_logout.svg" alt="Đăng xuất" />
+          <div class="nav_menu">
+            <!-- <div class="pattern">
+              <div><img src="../assets/img/Pattern.svg" /></div>
+            </div> -->
+            <button class="nav-item" aria-current="page" onclick="toggleActive(this)">
+              <img class="nav-icon" src="../assets/icons/icon_logout.svg" alt="Đăng xuất" />
             </button>
           </div>
         </div>
-
       </div>
     </div>
     <div class="column">
@@ -75,10 +78,10 @@
             <div class="resto-name">Bàn 10</div>
           </div>
           <div class="form-elements">
-            <div class="frame-2">
+            <label class="frame-2">
               <img class="img-3" src="../assets/icons/icon_search.svg" />
-              <div class="this-is-placeholder">Tìm bàn</div>
-            </div>
+              <input type="text" class="search-input" placeholder="Tìm bàn">
+            </label>
           </div>
         </div>
         <div class="option-table">
@@ -143,7 +146,6 @@
                 <span class="capacity">4 người</span>
               </div>
             </div>
-
           </article>
 
           <article class="table-card occupied">
