@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../css/globals.css" />
-    <link rel="stylesheet" href="../css/styleguide.css" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/manage_dishes.css" />
-    <link rel="stylesheet" href="../css/side_bar.css" />
-    <script src="../js/side_bar.js"></script>
+    <link rel="stylesheet" href="../assets/css/globals.css" />
+    <link rel="stylesheet" href="../assets/css/styleguide.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/manage_dishes.css" />
+    <link rel="stylesheet" href="../assets/css/side_bar.css" />
+    <script src="../assets/js/side_bar.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -230,7 +230,7 @@
                         </div>
                     </div>
                     <div class="button-wrapper">
-                        <button class="button-2">
+                        <button class="button-2" onclick="document.querySelector('.overlay').style.display = 'flex';">
                             <div class="text-wrapper-12">Thêm nguyên liệu</div>
                         </button>
                     </div>
@@ -240,85 +240,93 @@
 
         <div class="overlay">
             <div class="list-nguyenlieu">
-              <div class="frame-8"><div class="text-wrapper-13">Danh sách nguyên liệu</div></div>
-              <div class="container">
-                <div class="content-list">
-                  <div class="frame-wrapper">
-                    <div class="frame-5">
-                      <div class="images-7"></div>
-                      <div class="frame-9">
-                        <div class="text-wrapper-14">Thịt bò</div>
-                        <div class="div-2">
-                          <div class="text-wrapper-14">Đơn vị tính:</div>
-                          <div class="text-wrapper-14">kg</div>
-                        </div>
-                        <div class="div-2">
-                          <div class="price">Hiện còn:</div>
-                          <div class="price">5</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="frame-wrapper">
-                    <div class="frame-5">
-                      <div class="images-8"></div>
-                      <div class="frame-9">
-                        <div class="text-wrapper-14">Mì</div>
-                        <div class="div-2">
-                          <div class="text-wrapper-14">Đơn vị tính:</div>
-                          <div class="text-wrapper-14">kg</div>
-                        </div>
-                        <div class="div-2">
-                          <div class="price">Hiện còn:</div>
-                          <div class="price">5</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="items-material-2">
-                    <div class="frame-5">
-                      <div class="images-9"></div>
-                      <div class="frame-9">
-                        <div class="text-wrapper-15">Mì</div>
-                        <div class="div-2">
-                          <div class="text-wrapper-16">Đơn vị tính:</div>
-                          <div class="text-wrapper-16">kg</div>
-                        </div>
-                        <div class="div-2">
-                          <div class="price-2">Hiện còn:</div>
-                          <div class="price-2">5</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="frame-10">
-                      <div class="price-3">Nhập số lượng</div>
-                      <div class="add-item"><div class="text-wrapper-17">100</div></div>
-                    </div>
-                  </div>
-                  <div class="frame-wrapper">
-                    <div class="frame-5">
-                      <div class="images-10"></div>
-                      <div class="frame-9">
-                        <div class="text-wrapper-14">Mì gói</div>
-                        <div class="div-2">
-                          <div class="text-wrapper-14">Đơn vị tính:</div>
-                          <div class="text-wrapper-14">gói</div>
-                        </div>
-                        <div class="div-2">
-                          <div class="price">Hiện còn:</div>
-                          <div class="price">5</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="frame-8">
+                    <div class="text-wrapper-13">Danh sách nguyên liệu</div>
                 </div>
-              </div>
-              <div class="frame-11">
-                <button class="confirm-payment-wrapper"><div class="confirm-payment">Hủy</div></button>
-                <button class="button-3"><div class="confirm-payment-2">Lưu</div></button>
-              </div>
+                <div class="container">
+                    <div class="content-list">
+                        <div class="frame-wrapper">
+                            <div class="frame-5">
+                                <div class="images_material"><img src="../assets/img/img_dish_2.png" /></div>
+                                <div class="frame-9">
+                                    <div class="text-wrapper-14">Thịt bò</div>
+                                    <div class="div-2">
+                                        <div class="text-wrapper-14">Đơn vị tính:</div>
+                                        <div class="text-wrapper-14">kg</div>
+                                    </div>
+                                    <div class="div-2">
+                                        <div class="price">Hiện còn:</div>
+                                        <div class="price">5</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frame-wrapper">
+                            <div class="frame-5">
+                                <div class="images_material"><img src="../assets/img/img_dish_2.png" /></div>
+                                <div class="frame-9">
+                                    <div class="text-wrapper-14">Mì</div>
+                                    <div class="div-2">
+                                        <div class="text-wrapper-14">Đơn vị tính:</div>
+                                        <div class="text-wrapper-14">kg</div>
+                                    </div>
+                                    <div class="div-2">
+                                        <div class="price">Hiện còn:</div>
+                                        <div class="price">5</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items-material-2">
+                            <div class="frame-5">
+                                <div class="images_material"><img src="../assets/img/img_dish_2.png" /></div>
+                                <div class="frame-9">
+                                    <div class="text-wrapper-15">Mì</div>
+                                    <div class="div-2">
+                                        <div class="text-wrapper-15">Đơn vị tính:</div>
+                                        <div class="text-wrapper-15">kg</div>
+                                    </div>
+                                    <div class="div-2">
+                                        <div class="price-2 text-wrapper-15">Hiện còn:</div>
+                                        <div class="price-2 text-wrapper-15">5</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="frame-10">
+                                <div class="text-wrapper-15">Nhập số lượng</div>
+                                <div class="add-item">
+                                    <div class="text-wrapper-17">100</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frame-wrapper">
+                            <div class="frame-5">
+                                <div class="images_material"><img src="../assets/img/img_dish_2.png" /></div>
+                                <div class="frame-9">
+                                    <div class="text-wrapper-14">Mì gói</div>
+                                    <div class="div-2">
+                                        <div class="text-wrapper-14">Đơn vị tính:</div>
+                                        <div class="text-wrapper-14">gói</div>
+                                    </div>
+                                    <div class="div-2">
+                                        <div class="price">Hiện còn:</div>
+                                        <div class="price">5</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame-11">
+                    <button class="confirm-payment-wrapper" onclick="document.querySelector('.overlay').style.display = 'none';">
+                        <div class="confirm-payment">Hủy</div>
+                    </button>
+                    <button class="button-3">
+                        <div class="confirm-payment-2">Lưu</div>
+                    </button>
+                </div>
             </div>
-          </div>
+        </div>
     </div>
 </body>
 
