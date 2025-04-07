@@ -473,7 +473,9 @@
   align-self: stretch;
   width: 100%;
   flex-grow: 1;
-  overflow-y: auto;
+  max-height: 300px; /* Giới hạn chiều cao */
+  overflow-y: auto; /* Kích hoạt cuộn dọc */
+  padding: 8px; /* Thêm khoảng cách bên trong */
 }
 
 .order-detail .content-ordered {
